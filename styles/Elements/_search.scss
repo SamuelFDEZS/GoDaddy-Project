@@ -1,0 +1,68 @@
+.search {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+    &__box {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &__input {
+            width: 85%;
+            height: 65%;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 0;
+            padding: 0 10px;
+            font-size: 1rem;
+            background-color: rgb(229, 229, 229);
+            margin-left: 5%;
+            padding-left: 20px;
+            outline: none;
+
+            &::placeholder {
+                font-size: 0.9rem;
+            }
+
+            &:focus {
+                border-top: 2px solid #329ef7;
+                border-left: 2px solid #329ef7;
+                border-bottom: 2px solid #329ef7;
+            }
+        }
+
+        &__button {
+            width: 10%;
+            height: 65%;
+            border: 0;
+            background-color: #09757A;
+            color: white;
+        }
+    }
+
+    &__price {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &__img {
+            width: 40px;
+            height: 25px;
+            margin-left: 15%;
+            margin-top: 5%;
+        }
+
+        &__amount {
+            font-size: 0.7rem;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+    }
+}
