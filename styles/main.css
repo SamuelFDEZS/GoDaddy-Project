@@ -287,4 +287,125 @@ svg path {
   font-size: 0.7rem;
   margin-left: 5%;
   margin-top: 5%;
+}
+
+.main {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  gap: 1%;
+}
+.main__create {
+  width: 68%;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 4%;
+}
+.main__create__subtitle {
+  font-weight: bold;
+  margin-top: 3%;
+  margin-left: 3%;
+  font-size: 0.9rem;
+}
+.main__create__title {
+  width: 30%;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-left: 3%;
+}
+.main__create__call {
+  display: block;
+  width: 40%;
+  font-size: 1.3rem;
+  margin-left: 3%;
+  line-height: 1.5;
+}
+.main__create__button {
+  width: 18%;
+  height: 8%;
+}
+.main__create__advice {
+  margin-left: 3%;
+  font-size: 0.9rem;
+}
+.main__button {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  margin-left: 3%;
+  transition: 0.2s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__button:hover {
+  cursor: pointer;
+  padding: 0 30px;
+  transform: scale(1.02);
+}
+.main__button:hover > .main__create__button__arrow, .main__button:hover .main__offer__button__arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0%);
+}
+.main__button:hover > .main__create__button__start {
+  transform: translateX(-20px);
+}
+.main__button:hover > .main__offer__button__start {
+  transform: translateX(-10px);
+}
+.main__offer {
+  width: 22%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  background-color: #D8EFEF;
+}
+.main__offer__subtitle {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.main__offer__title {
+  width: 80%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+}
+.main__offer__button {
+  width: 60%;
+  height: 8%;
+}
+.main__offer__advice {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 80%;
+}
+
+button.main__button > .main__create__button__arrow,
+.main__offer__button__arrow {
+  opacity: 0;
+  visibility: hidden;
+  transition: linear 0.2s;
+  transform: translateX(10px);
+}
+
+.main__create__button__start,
+.main__offer__button__start {
+  transition: 0.2s linear;
 }/*# sourceMappingURL=main.css.map */

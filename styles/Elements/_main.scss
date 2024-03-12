@@ -1,0 +1,140 @@
+.main {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    gap: 1%;
+
+    &__create {
+        width: 68%;
+        height: 100%;
+        border-radius: 10px;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        gap: 4%;
+
+        &__subtitle {
+
+            font-weight: bold;
+            margin-top: 3%;
+            margin-left: 3%;
+            font-size: 0.9rem;
+        }
+
+        &__title {
+            width: 30%;
+            font-size: 3.5rem;
+            font-weight: bolder;
+            margin-left: 3%;
+
+        }
+
+        &__call {
+            display: block;
+            width: 40%;
+            font-size: 1.3rem;
+            margin-left: 3%;
+            line-height: 1.5;
+        }
+
+        &__button {
+            width: 18%;
+            height: 8%;
+        }
+
+        &__advice {
+            margin-left: 3%;
+            font-size: 0.9rem;
+        }
+    }
+
+    &__button {
+        background-color: black;
+        color: white;
+        outline: none;
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        margin-left: 3%;
+        transition: 0.2s;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+            padding: 0 30px;
+            transform: scale(1.02);
+
+            &>.main__create__button__arrow, .main__offer__button__arrow{
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0%);
+
+            }
+
+            &>.main__create__button__start{
+                transform: translateX(-20px);
+            }
+
+            &>.main__offer__button__start{
+                transform: translateX(-10px);
+            }
+        }
+    }
+
+    &__offer {
+        width: 22%;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        background-color: #D8EFEF;
+
+        &__subtitle {
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        &__title {
+            width: 80%;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        &__button{
+            width: 60%;
+            height: 8%;
+        }
+
+        &__advice {
+            font-size: 1.2rem;
+            text-align: center;
+            width: 80%;
+        }
+    }
+}
+
+
+button.main__button>.main__create__button__arrow,
+.main__offer__button__arrow {
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 0.2s;
+    transform: translateX(10px);
+}
+
+.main__create__button__start,
+.main__offer__button__start {
+    transition: 0.2s linear;
+}
