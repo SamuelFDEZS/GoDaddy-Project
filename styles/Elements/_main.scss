@@ -43,7 +43,7 @@
 
         &__button {
             width: 18%;
-            height: 8%;
+            height: 10%;
         }
 
         &__advice {
@@ -114,7 +114,7 @@
 
         &__button{
             width: 60%;
-            height: 8%;
+            height: 10%;
         }
 
         &__advice {
@@ -130,7 +130,7 @@ button.main__button>.main__create__button__arrow,
 .main__offer__button__arrow {
     opacity: 0;
     visibility: hidden;
-    transition: linear 0.2s;
+    transition: 0.2s ease-in;
     transform: translateX(10px);
 }
 

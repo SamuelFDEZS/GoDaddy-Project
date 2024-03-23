@@ -252,6 +252,7 @@ svg path {
   margin-left: 5%;
   padding-left: 20px;
   outline: none;
+  border: 2px solid transparent;
 }
 .search__box__input::-moz-placeholder {
   font-size: 0.9rem;
@@ -329,7 +330,7 @@ svg path {
 }
 .main__create__button {
   width: 18%;
-  height: 8%;
+  height: 10%;
 }
 .main__create__advice {
   margin-left: 3%;
@@ -389,7 +390,7 @@ svg path {
 }
 .main__offer__button {
   width: 60%;
-  height: 8%;
+  height: 10%;
 }
 .main__offer__advice {
   font-size: 1.2rem;
@@ -401,11 +402,69 @@ button.main__button > .main__create__button__arrow,
 .main__offer__button__arrow {
   opacity: 0;
   visibility: hidden;
-  transition: linear 0.2s;
+  transition: 0.2s ease-in;
   transform: translateX(10px);
 }
 
 .main__create__button__start,
 .main__offer__button__start {
   transition: 0.2s linear;
+}
+
+.domain-prices {
+  width: 90%;
+  height: 30vh;
+  border: 1px solid rgba(0, 0, 0, 0.132);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.domain-prices__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.097);
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  gap: 5%;
+  transition: 0.3s;
+  position: relative;
+}
+.domain-prices__link--big {
+  grid-row: span 2;
+}
+.domain-prices__link--big__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.domain-prices__link:hover {
+  background-color: black;
+  color: white;
+}
+.domain-prices__link:hover .domain-prices__link__span {
+  transform: translateX(-30px);
+}
+.domain-prices__link:hover .domain-prices__link__arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(20px);
+}
+.domain-prices__link__arrow {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+}
+.domain-prices__link__span {
+  transition: 0.2s ease;
 }/*# sourceMappingURL=main.css.map */
