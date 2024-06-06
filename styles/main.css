@@ -222,7 +222,7 @@ table {
   font-size: 0.8rem;
 }
 
-svg path {
+.logo-mark path {
   fill: white;
 }
 
@@ -889,4 +889,125 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--wordpress__protect__content__button:hover {
   scale: 1.02;
+}
+
+.trust {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30vh;
+}
+.trust__title {
+  width: 40%;
+  font-size: 3rem;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+.trust__services {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.trust__services__experience {
+  flex: 0 0 auto;
+  width: 29vw;
+  height: 54vh;
+  border-radius: 10px;
+  background-color: #F5F7F8;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.trust__services__experience:first-child {
+  margin-left: 5rem;
+}
+.trust__services__experience__subtitle {
+  font-size: 0.8rem;
+  margin-top: 8%;
+  margin-left: 8%;
+}
+.trust__services__experience__stars {
+  display: flex;
+  gap: 0.5%;
+  margin-left: 8%;
+}
+.trust__services__experience__description {
+  width: 80%;
+  height: 60%;
+  font-size: 1.7rem;
+  margin-left: 8%;
+  line-height: 120%;
+  margin-top: 5%;
+}
+.trust__services__experience__name {
+  margin-left: 8%;
+}
+.trust__overall {
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 40%;
+}
+.trust__overall__link {
+  display: block;
+  width: 30%;
+}
+.trust__overall__stars {
+  margin-top: 5%;
+  display: flex;
+  gap: 1%;
+}
+.trust__overall__reviewcount {
+  display: inline-block;
+  margin-top: 1%;
+  font-size: 1.1rem;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+  border-right: 2px solid rgb(208, 208, 208);
+}
+.trust__overall__reviewcount--aside {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+.trust__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  gap: 10%;
+}
+.trust__buttons__button {
+  width: 36%;
+  height: 85%;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.trust__buttons__button:hover {
+  background-color: black;
+  color: white;
+}
+.trust__buttons__button span {
+  font-size: 1.3rem;
+}
+
+::-moz-selection {
+  background-color: #96fffa;
+}
+
+::selection {
+  background-color: #96fffa;
+}
+
+body {
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */
