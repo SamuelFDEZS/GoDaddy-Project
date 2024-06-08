@@ -1131,4 +1131,75 @@ body {
   margin: 0;
   border: 3px solid black;
   line-height: 0;
+}
+
+.guide {
+  width: 100%;
+  height: 65vh;
+  margin-top: 5%;
+  background-image: url("https://img1.wsimg.com/cdn/Image/All/All/1/All/5dbeea8f-a487-4950-81d0-c646dd3d3209/mrq-Guide-EMEA-Jamila-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.guide__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.guide__content__left {
+  width: 15%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3%;
+}
+.guide__content__left__text {
+  font-weight: bold;
+  margin-right: 17%;
+  margin-top: 10%;
+}
+.guide__content__right {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.guide__content__right__logo {
+  width: 20%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  margin-top: 8%;
+}
+.guide__content__right__title {
+  width: 50%;
+  font-size: 4rem;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.guide__content__right__description {
+  width: 67%;
+  font-size: 1.3rem;
+  margin-top: 3%;
+}
+.guide__content__right__button {
+  width: 20%;
+  height: 10%;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: white;
+  background-color: black;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 3%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.guide__content__right__button:hover {
+  scale: 1.02;
 }/*# sourceMappingURL=main.css.map */
