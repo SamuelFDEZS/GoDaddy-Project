@@ -1,0 +1,22 @@
+.limitations{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 3%;
+    gap: 20%;
+
+    &__link{
+        display: block;
+        color: black;
+        font-size: 1.05rem;
+        font-weight: 700;
+        word-spacing: 1px;
+        &:active{
+            color: black;
+        }
+    }
+    &__rights{
+        font-size: 1.04rem;
+    }}

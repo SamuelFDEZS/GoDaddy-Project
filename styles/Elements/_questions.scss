@@ -1,0 +1,70 @@
+.freq-questions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+
+    &__title{
+        width: 32%;
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__subtitle{
+        margin-top: 1%;
+        font-size: 2.2rem;
+    }
+
+    &__list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 2vh;
+
+        &__question{
+            width: 45%;
+            padding: 20px 0;
+            border-top: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            & summary{
+                width: 90%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+                gap: 5%;
+                padding-top: 10px;
+                cursor: pointer;
+
+                & span{
+                    font-size: 1rem;
+                    transition: all 0.3s;
+                    position: absolute;
+                    right: 0;
+                }
+
+                & .fa-angle-down{
+                    transition: all 0.2s ease;
+                }
+
+                &.open .fa-angle-down {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &__description{
+                width: 80%;
+                padding-top: 20px;
+                font-size: 1.2rem;
+                line-height: 125%;
+            }
+        }
+    }
+}

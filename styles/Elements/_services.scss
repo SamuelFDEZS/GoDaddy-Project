@@ -33,8 +33,8 @@
             }
 
             &__description {
-                font-size: 1.1rem;
-                line-height: 120%;
+                font-size: 1.3rem;
+                line-height: 130%;
                 width: 80%;
             }
 
@@ -47,7 +47,7 @@
                 background-color: transparent;
                 white-space: nowrap;
                 font-size: 0.9rem;
-                margin-top: 5%;
+                margin-top: 2%;
                 &:hover {
                     transform: scale(1.02);
                 }
@@ -65,7 +65,7 @@
             }
         }
 
-        &:nth-child(2) {
+        &:first-child, &:last-child{
             flex-direction: row-reverse;
         }
     }

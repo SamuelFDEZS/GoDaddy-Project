@@ -4,6 +4,34 @@
     display: flex;
     gap: 1%;
 
+    @include breakpoint(md) {
+        height: 100vh;
+        flex-direction: column;
+        border: 3px solid black;
+        align-items: center;
+    }
+
+    @include breakpoint(sm) {
+        height: 100vh;
+        flex-direction: column;
+        border: 3px solid black;
+        align-items: center;
+    }
+
+    @include breakpoint(xs) {
+        height: 100vh;
+        flex-direction: column;
+        border: 3px solid black;
+        align-items: center;
+    }
+
+    @include breakpoint(xxs) {
+        height: 100vh;
+        flex-direction: column;
+        border: 3px solid black;
+        align-items: center;
+    }
+
     &__create {
         width: 68%;
         height: 100%;
@@ -17,12 +45,40 @@
         background-position: center;
         gap: 4%;
 
+        @include breakpoint(md) {
+            @include create-breakpoints {
+                height: 70%;
+            }
+        }
+
+        @include breakpoint(sm) {
+            @include create-breakpoints {
+                height: 80%;
+            }
+        }
+
+        @include breakpoint(xs) {
+            @include create-breakpoints;
+        }
+
+        @include breakpoint(xxs) {
+            @include create-breakpoints;
+        }
+
+
+
         &__subtitle {
 
             font-weight: bold;
             margin-top: 3%;
             margin-left: 3%;
             font-size: 0.9rem;
+
+            @include breakpoint(md) {
+                margin-top: 5%;
+                margin-left: 5%;
+                font-size: 1.3rem;
+            }
         }
 
         &__title {
@@ -30,6 +86,11 @@
             font-size: 3.5rem;
             font-weight: bolder;
             margin-left: 3%;
+
+            @include breakpoint(md) {
+                width: 40%;
+                font-size: 3rem;
+            }
 
         }
 
@@ -44,11 +105,21 @@
         &__button {
             width: 18%;
             height: 10%;
+
+            @include breakpoint(md) {
+                width: 25%;
+                height: 11%;
+            }
         }
 
         &__advice {
             margin-left: 3%;
             font-size: 0.9rem;
+
+            @include breakpoint(md) {
+                font-size: 1.1rem;
+                margin-top: 2%;
+            }
         }
     }
 
@@ -66,23 +137,28 @@
         align-items: center;
         justify-content: center;
 
+        @include breakpoint(md) {
+            font-size: 1.2rem;
+        }
+
         &:hover {
             cursor: pointer;
             padding: 0 30px;
             transform: scale(1.02);
 
-            &>.main__create__button__arrow, .main__offer__button__arrow{
+            &>.main__create__button__arrow,
+            .main__offer__button__arrow {
                 opacity: 1;
                 visibility: visible;
                 transform: translateX(0%);
 
             }
 
-            &>.main__create__button__start{
+            &>.main__create__button__start {
                 transform: translateX(-20px);
             }
 
-            &>.main__offer__button__start{
+            &>.main__offer__button__start {
                 transform: translateX(-10px);
             }
         }
@@ -99,9 +175,21 @@
         gap: 3%;
         background-color: #D8EFEF;
 
+        @include breakpoint(md) {
+            width: 97%;
+            height: 20%;
+            align-items: flex-start;
+            gap: 8%;
+        }
+
         &__subtitle {
             font-weight: bold;
             font-size: 1.4rem;
+
+            @include breakpoint(md) {
+                margin-left: 5%;
+                margin-top: 2%;
+            }
         }
 
         &__title {
@@ -110,17 +198,44 @@
             font-weight: bold;
             text-align: center;
             line-height: 30px;
+
+            @include breakpoint(md) {
+                text-align: left;
+                margin-left: 5%;
+            }
         }
 
-        &__button{
+        &__button {
             width: 60%;
             height: 10%;
+            border: 3px solid white;
+
+            @include breakpoint(md) {
+                width: 25%;
+                height: 95%;
+                margin-left: 5%;
+            }
         }
 
         &__advice {
             font-size: 1.2rem;
             text-align: center;
             width: 80%;
+
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+
+        &__link {
+            text-align: center;
+
+            @include breakpoint(md) {
+                text-align: left;
+                margin-left: 5%;
+                display: block;
+                margin-bottom: 2%;
+            }
         }
     }
 }
@@ -130,6 +245,7 @@ button.main__button>.main__create__button__arrow,
 .main__offer__button__arrow {
     opacity: 0;
     visibility: hidden;
+    width: 0;
     transition: 0.2s ease-in;
     transform: translateX(10px);
 }

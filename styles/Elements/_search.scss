@@ -10,7 +10,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        @include breakpoint(md) {
+            width: 98%;
+        }
 
         &__input {
             width: 85%;
@@ -27,8 +29,34 @@
             outline: none;
             border: 2px solid transparent;
 
+            @include breakpoint(md) {
+                @include search-input-breakpoints;
+            }
+            @include breakpoint(sm) {
+                @include search-input-breakpoints;
+            }
+            @include breakpoint(xs) {
+                @include search-input-breakpoints;
+            }
+            @include breakpoint(xxs) {
+                @include search-input-breakpoints;
+            }
+
             &::placeholder {
                 font-size: 0.9rem;
+
+                @include breakpoint(md) {
+                    font-size: 1.3rem;
+                }
+                @include breakpoint(sm) {
+                    font-size: 1.3rem;
+                }
+                @include breakpoint(xs) {
+                    font-size: 1.3rem;
+                }
+                @include breakpoint(xxs) {
+                    font-size: 1.3rem;
+                }
             }
 
             &:focus {
@@ -44,6 +72,46 @@
             border: 0;
             background-color: #09757A;
             color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &::before {
+                content: "Search domain";
+
+                @include breakpoint(md) {
+                    @include search-button-breakpoints{
+                        font-size: 1.5rem;
+                    }
+                }
+                @include breakpoint(sm) {
+                    @include search-button-breakpoints{
+                        font-size: 1.5rem;
+                    }
+                }
+                @include breakpoint(xs) {
+                    @include search-button-breakpoints{
+                        font-size: 1.5rem;
+                    }
+                }
+                @include breakpoint(xxs) {
+                    @include search-button-breakpoints{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: #07585c;
+            }
+
+            @include breakpoint(md) {
+                width: 10%;
+                height: 61%;
+                border-radius: 8px;
+            }
         }
     }
 
@@ -52,6 +120,19 @@
         height: 100%;
         display: flex;
         align-items: center;
+
+        @include breakpoint(md) {
+            display: none;
+        }
+        @include breakpoint(sm) {
+            display: none;
+        }
+        @include breakpoint(xs) {
+            display: none;
+        }
+        @include breakpoint(xxs) {
+            display: none;
+        }
 
         &__img {
             width: 40px;

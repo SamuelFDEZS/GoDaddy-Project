@@ -9,7 +9,12 @@
 </head>
 
 <body>
+    <div class="size"></div>
+    <div class="filter"></div>
     <header class="header">
+        <div class="header__dropdown">
+            <span class="fa-solid fa-bars header__dropdown__icon"></span>
+        </div>
         <div class="header__logo">
             <svg xmlns="http://www.w3.org/2000/svg" class="logo-mark" viewBox="0 0 166 32">
                 <path class="mobile desktop"
@@ -28,40 +33,72 @@
         </div>
 
         <nav class="header__nav">
+            <div class="header__nav__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 32">
+                    <path class="mobile desktop"
+                        d="M30.824 1.453c-3.713-2.316-8.603-1.77-12.963.972-4.347-2.74-9.239-3.288-12.948-.972C-.955 5.12-1.667 14.564 3.32 22.546c3.677 5.887 9.428 9.335 14.548 9.271 5.119.064 10.87-3.384 14.547-9.27C37.4 14.563 36.692 5.12 30.824 1.452zM6.02 20.863a19.112 19.112 0 01-2.303-5.273 15.067 15.067 0 01-.5-4.97C3.44 7.673 4.64 5.375 6.598 4.15c1.957-1.224 4.544-1.295 7.299-.203.419.169.829.358 1.228.568a22.496 22.496 0 00-3.956 4.754C8.14 14.116 7.215 19.511 8.272 23.81a19.723 19.723 0 01-2.253-2.947zm26.003-5.273a19.158 19.158 0 01-2.302 5.272 19.733 19.733 0 01-2.254 2.954c.946-3.855.303-8.576-2.014-13.005a.583.583 0 00-.837-.228l-7.225 4.515a.59.59 0 00-.188.813l1.06 1.695a.59.59 0 00.814.188l4.683-2.925c.151.454.303.901.416 1.363.442 1.617.611 3.297.5 4.97-.223 2.95-1.424 5.247-3.38 6.471a6.607 6.607 0 01-3.35.97h-.15a6.599 6.599 0 01-3.35-.97c-1.958-1.224-3.159-3.521-3.381-6.472-.11-1.672.058-3.352.5-4.969a19.671 19.671 0 016.03-9.65 15.108 15.108 0 014.241-2.629c2.748-1.092 5.34-1.02 7.298.203 1.958 1.224 3.157 3.522 3.38 6.47a15.105 15.105 0 01-.49 4.964z">
+                    </path>
+                    <path class="desktop"
+                        d="M74.065 12.892c-4.06 0-7.34 3.169-7.34 7.2 0 4.004 3.28 7.121 7.34 7.121 4.086 0 7.366-3.112 7.366-7.12 0-4.03-3.275-7.2-7.366-7.2zm0 10.557c-1.871 0-3.295-1.513-3.295-3.384s1.424-3.407 3.295-3.407c1.898 0 3.322 1.54 3.322 3.412 0 1.87-1.424 3.385-3.322 3.385v-.006zM90.583 7.362h-7.468a.6.6 0 00-.61.612v18.208a.605.605 0 00.61.648h7.468c5.977 0 10.13-3.975 10.13-9.758 0-5.818-4.153-9.71-10.13-9.71zm.177 15.622h-4.087V11.198h4.087c3.308 0 5.588 2.474 5.588 5.866 0 3.336-2.28 5.92-5.588 5.92zm24.82-9.7h-2.809a.633.633 0 00-.582.612v.833c-.64-1.057-2.085-1.835-3.884-1.835-3.503 0-6.783 2.751-6.783 7.145 0 4.37 3.251 7.171 6.755 7.171 1.806 0 3.28-.777 3.92-1.834v.861a.587.587 0 00.582.585h2.808a.571.571 0 00.584-.585V13.896a.594.594 0 00-.592-.612zm-6.533 10.196c-1.86 0-3.256-1.43-3.256-3.412s1.397-3.41 3.256-3.41c1.86 0 3.257 1.426 3.257 3.408 0 1.983-1.395 3.412-3.257 3.412v.002zm22.294-16.118h-2.808a.592.592 0 00-.61.584v6.728c-.648-1.002-2.114-1.78-3.948-1.78-3.476 0-6.7 2.751-6.7 7.145 0 4.37 3.252 7.171 6.755 7.171 1.806 0 3.17-.777 3.92-1.834v.861c0 .322.261.583.583.585h2.808a.57.57 0 00.584-.585V7.95a.57.57 0 00-.584-.588zm-6.532 16.152c-1.852 0-3.237-1.444-3.237-3.448 0-2.003 1.39-3.447 3.237-3.447 1.846 0 3.237 1.444 3.237 3.447 0 2.004-1.384 3.448-3.237 3.448zm22.29-16.152h-2.803a.594.594 0 00-.612.584v6.728c-.64-1.002-2.114-1.78-3.947-1.78-3.477 0-6.7 2.751-6.7 7.145 0 4.37 3.253 7.171 6.755 7.171 1.807 0 3.168-.777 3.92-1.834v.861a.587.587 0 00.584.585h2.803a.568.568 0 00.582-.585V7.95a.568.568 0 00-.582-.588zm-6.532 16.152c-1.853 0-3.237-1.444-3.237-3.448 0-2.003 1.39-3.447 3.237-3.447 1.846 0 3.237 1.444 3.237 3.447 0 2.004-1.38 3.448-3.232 3.448h-.005zm21.906-9.283l-4.19 14.37c-.809 2.556-2.613 4.086-5.421 4.086-1.277 0-2.44-.261-3.35-.782-.531-.303-.971-.58-.971-1.023 0-.275.089-.417.25-.675l.832-1.246c.235-.348.408-.461.66-.461a.96.96 0 01.554.192c.523.339 1.008.63 1.748.63.864 0 1.524-.277 1.88-1.306l.36-1.193h-1.696c-.418 0-.648-.249-.751-.584l-3.75-12.008c-.14-.473-.011-.946.683-.946h2.954c.36 0 .613.123.771.64l2.77 9.67 2.589-9.67c.082-.334.306-.64.75-.64h2.802c.552-.001.719.387.526.946zm-96.806 4.274v7.676a.625.625 0 01-.635.634h-2.317a.623.623 0 01-.634-.634v-2.015c-1.472 1.858-4.03 3.028-6.924 3.028-5.434 0-9.681-4.088-9.681-9.908 0-6.048 4.585-10.217 10.377-10.217 4.276 0 7.694 1.839 9.212 5.537a.843.843 0 01.07.309c0 .175-.116.307-.486.435l-2.706 1.042a.694.694 0 01-.511.009.783.783 0 01-.324-.371c-.971-1.847-2.7-3.1-5.36-3.1-3.45 0-5.922 2.694-5.922 6.188 0 3.387 2.104 6.172 6.02 6.172 2.06 0 3.703-.97 4.469-2.037H57.87a.625.625 0 01-.634-.635v-2.086a.625.625 0 01.634-.634h7.161a.604.604 0 01.635.607z">
+                    </path>
+                    <path class="desktop"
+                        d="M162.55 10.442v-.186c0-.013.004-.026.012-.036a.052.052 0 01.034-.013h1.183c.013 0 .025.005.034.013.009.01.013.023.013.036v.186a.052.052 0 01-.013.034.047.047 0 01-.034.013h-.432v1.167a.05.05 0 01-.048.048h-.224a.044.044 0 01-.032-.014.047.047 0 01-.015-.034v-1.167h-.432a.044.044 0 01-.047-.047zm2.068-.193l.323.75.324-.75a.066.066 0 01.026-.032.087.087 0 01.044-.01h.375a.044.044 0 01.047.046v1.404a.044.044 0 01-.045.047h-.21a.047.047 0 01-.035-.013.042.042 0 01-.013-.034v-1.06l-.348.77a.084.084 0 01-.026.038.08.08 0 01-.043.01h-.172a.078.078 0 01-.042-.01.073.073 0 01-.026-.037l-.346-.77v1.06a.052.052 0 01-.013.033.052.052 0 01-.032.013h-.216a.042.042 0 01-.03-.013.042.042 0 01-.013-.034v-1.404a.044.044 0 01.047-.046h.364c.014 0 .029.003.042.01.009.009.015.02.018.032z">
+                    </path>
+                    <path class="mobile"
+                        d="M27.889 30.386v-.21c0-.015.005-.03.015-.04a.048.048 0 01.038-.015h1.342c.014-.001.028.004.038.015.01.01.016.025.015.04v.21a.051.051 0 01-.015.04.048.048 0 01-.038.014h-.49v1.322a.05.05 0 01-.017.04.051.051 0 01-.038.017h-.253a.055.055 0 01-.038-.017.06.06 0 01-.015-.04V30.44h-.49a.048.048 0 01-.039-.015.051.051 0 01-.015-.04zm2.345-.217l.374.848.375-.848a.073.073 0 01.03-.036.08.08 0 01.05-.012h.4a.051.051 0 01.053.053v1.592a.056.056 0 01-.013.037.05.05 0 01-.037.016h-.24a.055.055 0 01-.038-.016.056.056 0 01-.015-.037v-1.203l-.393.874a.09.09 0 01-.03.04.086.086 0 01-.05.013h-.194a.085.085 0 01-.048-.012.09.09 0 01-.03-.041l-.393-.874v1.203a.05.05 0 01-.015.037.053.053 0 01-.036.016h-.243a.05.05 0 01-.036-.016.056.056 0 01-.015-.037v-1.592a.05.05 0 01.017-.038.047.047 0 01.036-.015h.413a.083.083 0 01.049.012.071.071 0 01.029.036z">
+                    </path>
+                </svg>
+            </div>
             <ul class="header__nav__list">
                 <div class="header__nav__list__box">
                     <li class="header__nav__list__box__item"><a href="">Domains</a></li>
+                    <span class="fa-solid fa-arrow-right header__nav__list__box__arrow"></span>
+                </div>
+
+                <div class="header__nav__list__box">
                     <li class="header__nav__list__box__item"><a href="">Websites</a></li>
+                    <span class="fa-solid fa-arrow-right header__nav__list__box__arrow"></span>
                 </div>
                 <div class="header__nav__list__separator"></div>
                 <div class="header__nav__list__box">
                     <li class="header__nav__list__box__item"><a href="">Hosting and Security</a></li>
+                    <span class="fa-solid fa-arrow-right header__nav__list__box__arrow"></span>
                 </div>
                 <div class="header__nav__list__separator"></div>
-                <div class="header__nav__list__box__item">
+                <div class="header__nav__list__box">
                     <li class="header__nav__list__box__item"><a href="">Email</a></li>
+                    <span class="fa-solid fa-arrow-right header__nav__list__box__arrow"></span>
                 </div>
                 <div class="header__nav__list__separator"></div>
                 <div class="header__nav__list__box">
                     <li class="header__nav__list__box__item"><a href="">Pricing</a></li>
+                    <span class="fa-solid fa-arrow-right header__nav__list__box__arrow"></span>
                 </div>
             </ul>
+
+            <div class="header__nav__options">
+                <div class="header__nav__options__option"><span class="fa-regular fa-circle-question"></span> Help Center</div>
+                <div class="header__nav__options__option"><span class="fa-regular fa-user"></span> Account</div>
+                <div class="header__nav__options__option"><span class="fa-solid fa-cart-shopping"></span> Basket</div>
+            </div>
+
+            <span class="fa-solid fa-xmark header__nav__xmark"></span>
         </nav>
 
         <div class="header__right-list">
-            <span class="header__right-list__item"><a href="" class="header__right-list__item__link">Contact
-                    us</a></span>
-            <span class="header__right-list__item"><a href="" class="header__right-list__item__link">Help</a></span>
-            <span class="header__right-list__item"><a href="" class="header__right-list__item__link">Sign in <span
-                        class="fa-solid fa-chevron-down"></span></a></span>
+            <span class="header__right-list__item">
+                <a href="" class="header__right-list__item__link"></a>
+            </span>
+            <span class="header__right-list__item"><a href="" class="header__right-list__item__link"></a></span>
+            <span class="header__right-list__item"><a href="" class="header__right-list__item__link"></a></span>
         </div>
-        <span class="fa-solid fa-cart-shopping header__cart"></span>
+        <span class="header__cart"></span>
     </header>
 
     <section class="search">
         <div class="search__box">
             <input type="text" class="search__box__input" placeholder="Find your perfect domain">
-            <button type="button" class="search__box__button">Search domain</button>
+            <button type="button" class="search__box__button"></button>
         </div>
 
         <div class="search__price">
@@ -80,8 +117,7 @@
             <span class="main__create__call">Let our GoDaddy Guides build your starter website for FREE. Give us a
                 call on 020 7023 9020.
             </span>
-            <button class="main__create__button main__button"><span class="main__create__button__start">Start for
-                    free</span> <span class="fa-solid fa-arrow-right main__create__button__arrow"></span></button>
+            <button class="main__create__button main__button"><span class="main__create__button__start">Start for free</span> <span class="fa-solid fa-arrow-right main__create__button__arrow"></span></button>
             <span class="main__create__advice">No charge, no obligation, nothing to cancel.**</span>
         </section>
 
@@ -867,14 +903,14 @@
         <article class="services__service">
             <div class="services__service__info">
                 <h3 class="services__service__info__subtitle">Professional mail</h3>
-                <h1 class="services__service__info__title">Build your success</h1>
+                <h1 class="services__service__info__title">Build on your success</h1>
                 <p class="services__service__info__description">Everyone has email, but that doesn't mean all emails are
                     the same. It's nine times more likely for customers to choose a company with a business email
                     address like yourmail@NeueBloom.com</p>
-                <button class="services__service__info__button">Check email plans</button>
+                <button class="services__service__info__button">See email plans</button>
             </div>
             <div class="services__service__img">
-                <img src="https://www.lifewire.com/thmb/i00R9msQ0_1F-KWegEdw6NPAPlE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/modern-email-marketing-5bef4b5746e0fb0058fc2008.png"
+                <img src="https://img1.wsimg.com/cdnassets/transform/dbdcc242-1157-4898-b476-08f809e7248d/76640_FTR_DomainUpdate76640_FTR_You"
                     alt="Image for the service">
             </div>
         </article>
@@ -882,7 +918,7 @@
         <article class="services__service">
             <div class="services__service__info">
                 <h3 class="services__service__info__subtitle">SSL Security</h3>
-                <h1 class="services__service__info__title">Safeguard Your Data and Your Client's Information</h1>
+                <h1 class="services__service__info__title">Fast, secure and always online</h1>
                 <p class="services__service__info__description">With an SSL certificate, you can protect the data your
                     website receives and transmits, from personal information to credit card numbers. And if your
                     website visitors feel secure, they are more likely to want to do business with you.</p>
@@ -921,9 +957,7 @@
     </section>
 
     <section class="guide">
-        <!--Esta foto ha de usarse para el background, no como image, pero es solo para guardarlo aquí:
-        <img src="https://img1.wsimg.com/cdn/Image/All/All/1/All/5dbeea8f-a487-4950-81d0-c646dd3d3209/mrq-Guide-EMEA-Jamila-desktop.jpg" alt="Girl image">
-        -->
+
         <div class="guide__content">
             <div class="guide__content__left">
                 <span class="guide__content__left__text">Jamila R.</span>
@@ -932,7 +966,8 @@
 
             <div class="guide__content__right">
                 <div class="guide__content__right__logo">
-                    <img data-cy="gd-guides-logo" alt="GoDaddy Guides Logo" height="18" width="135" src="https://img1.wsimg.com/cdnassets/m/4c719f5dfa9e9e9e/original/GoDaddy-Guides-Logo.svg">
+                    <img data-cy="gd-guides-logo" alt="GoDaddy Guides Logo" height="18" width="135"
+                        src="https://img1.wsimg.com/cdnassets/m/4c719f5dfa9e9e9e/original/GoDaddy-Guides-Logo.svg">
                 </div>
                 <h1 class="guide__content__right__title">Why go with GoDaddy?</h1>
                 <p class="guide__content__right__description">
@@ -948,23 +983,26 @@
         <h1 class="freq-questions__title">
             Millions of customers rely on our domains and web hosting to get their ideas online.
         </h1>
-        <h2 class="freq-questions__subtitle">Frequent questions</h2>
+        <h2 class="freq-questions__subtitle">Frequently Asked questions</h2>
 
         <div class="freq-questions__list">
-            <article class="freq-questions__list__question">
-                <h2>How does GoDaddy help small business owners achieve their goals?</h2>
+            <details class="freq-questions__list__question">
+                <summary>How does GoDaddy help small business owners achieve their goals? <span
+                        class="fa-solid fa-angle-down"></span></summary>
                 <p class="freq-questions__list__question__description">
-                    GoDaddy offers more than just a simple platform for creating your website. We provide everything you
-                    need to build an effective and memorable online presence. Already have a website? We offer hosting
-                    plans that ensure its speed, security, and online presence. Our business email helps you create a
-                    professional image. Meanwhile, our online marketing tools empower entrepreneurs to showcase their
-                    online presence with SEO optimized websites. GoDaddy is a comprehensive solution provider to present
-                    your idea on the web with specialized and personalized support from GoDaddy experts.
+                    GoDaddy offers more than just a platform to build your website, we offer everything you need to
+                    create an effective, memorable online presence. Already have a site? We offer hosting plans that
+                    will keep it fast, secure and online. Our professional email helps you build a professional image,
+                    while our online marketing tools empower entrepreneurs to get online with an SEO-friendly website.
+                    GoDaddy is an all-in-one solution provider to get your idea online, backed with expert, personalized
+                    support from GoDaddy Guides.
                 </p>
-            </article>
+            </details>
 
-            <article class="freq-questions__list__question">
-                <h2>Why do I need a website for my business?</h2>
+            <details class="freq-questions__list__question">
+                <summary>Why do I need a website for my business?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
                 <p class="freq-questions__list__question__description">
                     Even local small businesses that operate only in their city need a website. The website is the first
                     thing customers visit when they are looking for a product or service. Having a website will help
@@ -987,10 +1025,12 @@
                     range of online tools for creating websites, along with hosting, email, and marketing options to
                     help your business grow on the Internet.
                 </p>
-            </article>
+            </details>
 
-            <article class="freq-questions__list__question">
-                <h2>Why do I need a business email?</h2>
+            <details class="freq-questions__list__question">
+                <summary>Why do I need a business email?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
 
                 <p class="freq-questions__list__question__description">
                     There are many reasons to switch from free email
@@ -1010,19 +1050,23 @@
                         customers and potential clients, making it easier for them to visit.
                     </li>
                 </ol>
-            </article>
-            <article class="freq-questions__list__question">
-                <h2>Why choose GoDaddy for your domain name?</h2>
+            </details>
+            <details class="freq-questions__list__question">
+                <summary>Why choose GoDaddy for your domain name?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
                 <p class="freq-questions__list__question__description">
                     GoDaddy is the world's largest domain registrar and the most trusted by customers. We empower
                     creative individuals like you to succeed on the Internet. Buying a domain name is easy with our
                     domain search tool. Plus, with our domain name generator tools, you can find the perfect web address
                     for your business.
                 </p>
-            </article>
+            </details>
 
-            <article class="freq-questions__list__question">
-                <h2>Why use GoDaddy's Website Builder?</h2>
+            <details class="freq-questions__list__question">
+                <summary>Why use GoDaddy's Website Builder?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
                 <p class="freq-questions__list__question__description">
                     Because it's a quick and easy way to create a website that will delight both you and your customers.
                     Just enter your idea or industry, and GoDaddy's Website Builder will show you a number of
@@ -1031,10 +1075,12 @@
                     comprehensive eCommerce system, Website Builder can handle your business needs today and as you
                     grow.
                 </p>
-            </article>
+            </details>
 
-            <article class="freq-questions__list__question">
-                <h2>Why is GoDaddy a global leader in web hosting?</h2>
+            <details class="freq-questions__list__question">
+                <summary>Why is GoDaddy a global leader in web hosting?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
                 <p class="freq-questions__list__question__description">
                     With nearly 20 years in the industry, we have the experience, technology, and hosting experts who
                     help web designers, developers, bloggers, and online businesses create and maintain their presence
@@ -1042,20 +1088,24 @@
                     uptime of 99.9% *** and award-winning support that has helped nearly 20+ million customers showcase
                     themselves online.
                 </p>
-            </article>
+            </details>
 
-            <article class="freq-questions__list__question">
-                <h2>Why choose GoDaddy for WordPress?</h2>
+            <details class="freq-questions__list__question">
+                <summary>Why choose GoDaddy for WordPress?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
                 <p class="freq-questions__list__question__description">
                     GoDaddy offers reliable and affordable WordPress hosting plans and WooCommerce hosting plans, with
                     one-click installations and the latest version to ensure you have the latest features for your
                     website. Your website content is managed from one place; you have a wide range of themes and plugins
                     that offer endless options to meet your goals.
                 </p>
-            </article>
+            </details>
 
-            <article class="freq-questions__list__question">
-                <h2>Why should I transfer my domain, website, or web hosting to GoDaddy?</h2>
+            <details class="freq-questions__list__question">
+                <summary>Why should I transfer my domain, website, or web hosting to GoDaddy?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
                 <p class="freq-questions__list__question__description">
                     There are several reasons. Our award-winning support is always one of the main reasons users
                     transfer their presence to GoDaddy. Obviously, our prices (including the free 1-year extension for
@@ -1063,70 +1113,77 @@
                     our products, transferring your domain or web hosting allows us to consolidate your web presence
                     with one provider, making it easier to manage.
                 </p>
-            </article>
+            </details>
 
-            <article class="freq-questions__list__question">
-                <h2>Why use GoDaddy's Logo Maker?</h2>
+            <details class="freq-questions__list__question">
+                <summary>Why use GoDaddy's Logo Maker?
+                    <span class="fa-solid fa-angle-down"></span>
+                </summary>
                 <p class="freq-questions__list__question__description">
                     GoDaddy's Logo Maker makes it easy to create a custom logo that helps define your brand's
                     personality and transform your business. From visual logos to wordmarks, you'll have hundreds of
                     templates to choose from. Or you can design your own in minutes. No design skills required.
                 </p>
-            </article>
+            </details>
 
         </div>
     </section>
 
-    <button class="limitations">View product limitations and legal policies</button>
-    <span class="rights">Third-party logos and trademarks are registered trademarks of their respective owners. All
-        rights reserved.</span>
+    <section class="limitations">
+        <a href="" class="limitations__link">View product limitations and legal policies</a>
 
-    <section class="support">
-        <span class="support__number">Do you need help? Call our award-winning support team at +34 91 198 05 24</span>
+        <span class="limitations__rights">Third-party logos and trademarks are registered trademarks of their respective
+            owners. All
+            rights reserved.</span>
     </section>
 
-
     <footer class="footer">
-        <h3 class="footer__warning">Prices do not include applicable taxes or ICANN fees.</h3>
+
+        <h3 class="footer__warning">Prices exclude tax. ICANN fees included.</h3>
         <section class="footer__columns">
-            <div class="footer__columns__about">
-                <a href="#" class="footer__columns__item footer__columns--about__item">Employment</a>
-                <a href="#" class="footer__columns__item footer__columns--about__item">Contact us</a>
-                <a href="#" class="footer__columns__item footer__columns--about__item">GoDaddy blog</a>
-                <a href="#" class="footer__columns__item footer__columns--about__item">Legal info</a>
-                <a href="#" class="footer__columns__item footer__columns--about__item">Trust center</a>
+            <div class="footer__columns__column footer__columns__column--about">
+                <h3 class="footer__columns__column__title">About GoDaddy</h3>
+                <a href="#" class="footer__columns__column__item footer__columns__column--about__item">Employment</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--about__item">Contact us</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--about__item">GoDaddy blog</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--about__item">Legal info</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--about__item">Trust center</a>
             </div>
 
-            <div class="footer__columns__support">
-                <a href="#" class="footer__columns__item footer__columns--support__item">Product support</a>
-                <a href="#" class="footer__columns__item footer__columns--support__item">Report abuse</a>
-                <a href="#" class="footer__columns__item footer__columns--support__item">Resources</a>
+            <div class="footer__columns__column footer__columns__column--support">
+                <h3 class="footer__columns__column__title">Support</h3>
+                <a href="#" class="footer__columns__column__item footer__columns__column--support__item">Product support</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--support__item">Report abuse</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--support__item">Resources</a>
             </div>
 
-            <div class="footer__columns__resources">
-                <a href="#" class="footer__columns__item footer__columns--resources__item">Webmail</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">WHOIS</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">ICANN Confirmation</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">Developers and Designers</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">Product catalog</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">Company name generator</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">Affiliated</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">Reseller programs</a>
-                <a href="#" class="footer__columns__item footer__columns--resources__item">GoDaddy Pro</a>
+            <div class="footer__columns__column footer__columns__column--resources">
+            <h3 class="footer__columns__column__title">Resources</h3>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">Webmail</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">WHOIS</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">ICANN Confirmation</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">Developers and Designers</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">Product catalog</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">Company name generator</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">Affiliated</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">Reseller programs</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--resources__item">GoDaddy Pro</a>
             </div>
-            <div class="footer__columns__account">
-                <a href="#" class="footer__columns__item footer__columns--account__item">My products</a>
-                <a href="#" class="footer__columns__item footer__columns--account__item">Renewals and facturations</a>
-                <a href="#" class="footer__columns__item footer__columns--account__item">Create account</a>
+            <div class="footer__columns__column footer__columns__column--account">
+                <h3 class="footer__columns__column__title">Account</h3>
+                <a href="#" class="footer__columns__column__item footer__columns__column--account__item">My products</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--account__item">Renewals and facturations</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--account__item">Create account</a>
             </div>
 
-            <div class="footer__columns__shopping">
-                <a href="#" class="footer__columns__item footer__columns--shopping__item">But a Domain</a>
-                <a href="#" class="footer__columns__item footer__columns--shopping__item">Websites</a>
-                <a href="#" class="footer__columns__item footer__columns--shopping__item">WordPress</a>
-                <a href="#" class="footer__columns__item footer__columns--shopping__item">Hosting</a>
-                <a href="#" class="footer__columns__item footer__columns--shopping__item">Web security</a>
-                <a href="#" class="footer__columns__item footer__columns--shopping__item">Email and Office</a>
+            <div class="footer__columns__column footer__columns__column--shopping">
+                <h3 class="footer__columns__column__title">Shopping</h3>
+                <a href="#" class="footer__columns__column__item footer__columns__column--shopping__item">But a Domain</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--shopping__item">Websites</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--shopping__item">WordPress</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--shopping__item">Hosting</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--shopping__item">Web security</a>
+                <a href="#" class="footer__columns__column__item footer__columns__column--shopping__item">Email and Office</a>
             </div>
 
         </section>
@@ -1150,8 +1207,8 @@
                         </path>
                     </svg>
 
-                    <button class="footer__rows__logo-social--logo__language">United Kingdom-English </button>
-                    <button class="footer__rows__logo-social--logo__coin">EUR €</button>
+                    <button class="footer__rows__logo-social--logo__language">United Kingdom-English <span class="fa-solid fa-angle-up"></span></button>
+                    <button class="footer__rows__logo-social--logo__coin">EUR € <span class="fa-solid fa-angle-up"></span></button>
                 </div>
 
                 <div class="footer__rows__logo-social--social">
