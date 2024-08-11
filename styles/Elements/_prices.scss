@@ -10,6 +10,19 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
+    @include breakpoint(md){
+        display: none;
+    }
+    @include breakpoint(sm){
+        display: none;
+    }
+    @include breakpoint(xs){
+        display: none;
+    }
+    @include breakpoint(xxs){
+        display: none;
+    }
+
 
     &__link{
         display: flex;
@@ -24,12 +37,21 @@
         transition: 0.3s;
         position: relative;
 
+        @include breakpoint(lg){
+            font-size: 0.9rem;
+        }
+
         &--big{
             grid-row: span 2;
 
             &__title{
                 font-size: 2.5rem;
                 font-weight: 800;
+            }
+
+            &__span{
+                text-align: center;
+                line-height: 130%;
             }
         }
 
@@ -38,13 +60,13 @@
             color: white;
 
             & .domain-prices__link__span{
-                transform: translateX(-30px);
+                transform: translateX(-1vw);
             }
 
             & .domain-prices__link__arrow{
                 opacity: 1;
                 visibility: visible;
-                transform: translateX(20px);
+                transform: translateX(2vw);
             }
         }
 

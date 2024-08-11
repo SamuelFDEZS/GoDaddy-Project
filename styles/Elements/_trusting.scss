@@ -17,6 +17,20 @@
         flex-wrap: nowrap;
         gap: 1rem;
 
+        @include breakpoint(md){
+            width: 100%;
+            overflow: hidden;
+        }
+        @include breakpoint(sm){
+            overflow: hidden;
+        }
+        @include breakpoint(xs){
+            overflow: hidden;
+        }
+        @include breakpoint(xxs){
+            overflow: hidden;
+        }
+
         &__experience {
             flex: 0 0 auto;
             width: 29vw;
@@ -32,7 +46,7 @@
             }
 
             &__subtitle {
-                font-size: 0.8rem;
+                font-size: 1vw;
                 margin-top: 8%;
                 margin-left: 8%;
             }
@@ -85,7 +99,6 @@
                 display: inline-block;
                 margin-left: 5px;
                 font-size: 1.1rem;
-            
             }
         }
     }
@@ -100,6 +113,19 @@
         right: 3%;
         bottom: 5%;
         gap: 10%;
+
+        @include breakpoint(md){
+            display: none;
+        }
+        @include breakpoint(sm){
+            display: none;
+        }
+        @include breakpoint(xs){
+            display: none;
+        }
+        @include breakpoint(xxs){
+            display: none;
+        }
 
         &__button {
             width: 36%;

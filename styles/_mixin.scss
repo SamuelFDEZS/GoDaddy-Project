@@ -46,7 +46,6 @@ $breakpoints: (
 @mixin create-breakpoints {
     width: 97%;
     margin: 0;
-    background-position: center center;
     border-radius: 30px;
     @content;
 }

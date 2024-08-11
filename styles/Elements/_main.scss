@@ -7,29 +7,28 @@
     @include breakpoint(md) {
         height: 100vh;
         flex-direction: column;
-        border: 3px solid black;
         align-items: center;
     }
 
     @include breakpoint(sm) {
         height: 100vh;
         flex-direction: column;
-        border: 3px solid black;
         align-items: center;
+        gap: 2%;
     }
 
     @include breakpoint(xs) {
         height: 100vh;
         flex-direction: column;
-        border: 3px solid black;
         align-items: center;
+        gap: 2%;
     }
 
     @include breakpoint(xxs) {
         height: 100vh;
         flex-direction: column;
-        border: 3px solid black;
         align-items: center;
+        gap: 2%;
     }
 
     &__create {
@@ -47,28 +46,41 @@
 
         @include breakpoint(md) {
             @include create-breakpoints {
-                height: 70%;
+                height: 80%;
+                background-position: center center;
             }
         }
 
         @include breakpoint(sm) {
             @include create-breakpoints {
                 height: 80%;
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/4c5fe153-b3a2-416e-b772-cfd315360e36/row-mrq-hp-portrait");
+                background-position: center 80%;
+                align-items: center;
             }
         }
 
         @include breakpoint(xs) {
-            @include create-breakpoints;
+            @include create-breakpoints {
+                height: 80%;
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/4c5fe153-b3a2-416e-b772-cfd315360e36/row-mrq-hp-portrait");
+                background-position: center 80%;
+                align-items: center;
+            }
         }
 
         @include breakpoint(xxs) {
-            @include create-breakpoints;
+            @include create-breakpoints {
+                height: 80%;
+                background-image: url("https://img1.wsimg.com/cdnassets/transform/4c5fe153-b3a2-416e-b772-cfd315360e36/row-mrq-hp-portrait");
+                background-position: center top;
+                align-items: center;
+            }
         }
 
 
 
         &__subtitle {
-
             font-weight: bold;
             margin-top: 3%;
             margin-left: 3%;
@@ -77,6 +89,21 @@
             @include breakpoint(md) {
                 margin-top: 5%;
                 margin-left: 5%;
+                font-size: 1.3rem;
+            }
+
+            @include breakpoint(sm) {
+                margin-left: 0;
+                font-size: 1.3rem;
+            }
+
+            @include breakpoint(xs) {
+                margin-left: 0;
+                font-size: 1.3rem;
+            }
+
+            @include breakpoint(xxs) {
+                margin-left: 0;
                 font-size: 1.3rem;
             }
         }
@@ -92,6 +119,23 @@
                 font-size: 3rem;
             }
 
+            @include breakpoint(sm) {
+                width: 100%;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+
+            @include breakpoint(xs) {
+                width: 100%;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            @include breakpoint(xxs) {
+                width: 100%;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+
         }
 
         &__call {
@@ -100,6 +144,24 @@
             font-size: 1.3rem;
             margin-left: 3%;
             line-height: 1.5;
+
+            @include breakpoint(sm) {
+                width: 70%;
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            @include breakpoint(xs) {
+                width: 70%;
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            @include breakpoint(xxs) {
+                width: 70%;
+                font-size: 1.3rem;
+                text-align: center;
+            }
         }
 
         &__button {
@@ -110,6 +172,27 @@
                 width: 25%;
                 height: 11%;
             }
+
+            @include breakpoint(sm) {
+                width: 38%;
+                height: 8%;
+            }
+
+            @include breakpoint(xs) {
+                width: 38%;
+                height: 8%;
+            }
+
+            @include breakpoint(xxs) {
+                width: 38%;
+                height: 8%;
+            }
+
+            &__start {
+                @include breakpoint(sm) {
+                    font-size: 1.2rem;
+                }
+            }
         }
 
         &__advice {
@@ -119,6 +202,18 @@
             @include breakpoint(md) {
                 font-size: 1.1rem;
                 margin-top: 2%;
+            }
+
+            @include breakpoint(sm) {
+                font-size: 1.1rem;
+            }
+
+            @include breakpoint(xs) {
+                font-size: 1.1rem;
+            }
+
+            @include breakpoint(xxs) {
+                font-size: 1.1rem;
             }
         }
     }
@@ -174,12 +269,38 @@
         justify-content: center;
         gap: 3%;
         background-color: #D8EFEF;
+        position: relative;
 
         @include breakpoint(md) {
             width: 97%;
-            height: 20%;
+            height: 25%;
             align-items: flex-start;
             gap: 8%;
+        }
+
+        @include breakpoint(sm) {
+            width: 97%;
+            height: 15%;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 8%;
+            border-radius: 25px;
+        }
+        @include breakpoint(xs) {
+            width: 97%;
+            height: 15%;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 3%;
+            border-radius: 25px;
+        }
+        @include breakpoint(xxs) {
+            width: 97%;
+            height: 15%;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 2%;
+            border-radius: 25px;
         }
 
         &__subtitle {
@@ -189,6 +310,22 @@
             @include breakpoint(md) {
                 margin-left: 5%;
                 margin-top: 2%;
+            }
+
+            @include breakpoint(sm) {
+                margin-left: 2%;
+                margin-top: 3%;
+                font-size: 1rem;
+            }
+            @include breakpoint(xs) {
+                margin-left: 2%;
+                margin-top: 3%;
+                font-size: 1rem;
+            }
+            @include breakpoint(xxs) {
+                margin-left: 2%;
+                margin-top: 3%;
+                font-size: 1rem;
             }
         }
 
@@ -202,6 +339,24 @@
             @include breakpoint(md) {
                 text-align: left;
                 margin-left: 5%;
+                white-space: nowrap;
+            }
+
+            @include breakpoint(sm) {
+                text-align: left;
+                margin-left: 2%;
+                font-size: 1.4rem;
+                white-space: nowrap;
+            }
+            @include breakpoint(xs) {
+                text-align: left;
+                margin-left: 2%;
+                font-size: 1.4rem;
+            }
+            @include breakpoint(xxs) {
+                text-align: left;
+                margin-left: 2%;
+                font-size: 1.2rem;
             }
         }
 
@@ -215,6 +370,17 @@
                 height: 95%;
                 margin-left: 5%;
             }
+
+            @include breakpoint(sm) {
+                display: none;
+            }
+
+            @include breakpoint(xs) {
+                display: none;
+            }
+            @include breakpoint(xxs) {
+                display: none;
+            }
         }
 
         &__advice {
@@ -223,6 +389,16 @@
             width: 80%;
 
             @include breakpoint(md) {
+                display: none;
+            }
+
+            @include breakpoint(sm) {
+                display: none;
+            }
+            @include breakpoint(xs) {
+                display: none;
+            }
+            @include breakpoint(xxs) {
                 display: none;
             }
         }
@@ -235,6 +411,59 @@
                 margin-left: 5%;
                 display: block;
                 margin-bottom: 2%;
+            }
+
+            @include breakpoint(sm) {
+                text-align: left;
+                margin-left: 2%;
+                display: block;
+            }
+            @include breakpoint(xs) {
+                text-align: left;
+                margin-left: 2%;
+                display: block;
+                font-size: 0.8rem;
+            }
+            @include breakpoint(xxs) {
+                text-align: left;
+                margin-left: 2%;
+                display: block;
+                font-size: 0.8rem;
+            }
+        }
+
+        &__arrow.fa-solid {
+            display: none;
+
+            @include breakpoint(sm) {
+                display: block;
+                width: 5%;
+                position: absolute;
+                right: 2%;
+                top: 50%;
+                transform: translate(-50% 0);
+                font-size: 1.7rem;
+                cursor: pointer;
+            }
+            @include breakpoint(xs) {
+                display: block;
+                width: 5%;
+                position: absolute;
+                right: 2%;
+                top: 50%;
+                transform: translate(-50% 0);
+                font-size: 1.7rem;
+                cursor: pointer;
+            }
+            @include breakpoint(xxs) {
+                display: block;
+                width: 5%;
+                position: absolute;
+                right: 2%;
+                top: 50%;
+                transform: translate(-50% 0);
+                font-size: 1.7rem;
+                cursor: pointer;
             }
         }
     }

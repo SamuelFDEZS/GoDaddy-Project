@@ -518,7 +518,18 @@ span.header__nav__xmark{
     z-index: 999;
 
     &::before {
-        content: "X";
+
+        @include breakpoint(xxl) {
+            content: "xxl";
+        }
+
+        @include breakpoint(xl) {
+            content: "xl";
+        }
+
+        @include breakpoint(lg) {
+            content: "lg";
+        }
 
         @include breakpoint(md) {
             content: "md";
