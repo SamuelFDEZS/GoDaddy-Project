@@ -9,6 +9,33 @@
         font-size: 3rem;
         margin-left: 5rem;
         margin-bottom: 1rem;
+
+        @include breakpoint(md){
+            width: 60%;
+            margin-left: 0;
+            font-size: 2.5rem;
+        }
+        @include breakpoint(sm){
+            width: 70%;
+            font-size: 2.5rem;
+            margin-left: 0;
+            align-self: center;
+            text-align: center;
+        }
+        @include breakpoint(xs){
+            width: 70%;
+            font-size: 2.5rem;
+            margin-left: 0;
+            align-self: center;
+            text-align: center;
+        }
+        @include breakpoint(xxs){
+            width: 75%;
+            font-size: 2.2rem;
+            margin-left: 0;
+            align-self: center;
+            text-align: center;
+        }
     }
 
     &__services {
@@ -22,13 +49,16 @@
             overflow: hidden;
         }
         @include breakpoint(sm){
-            overflow: hidden;
+            overflow-y: hidden;
+            overflow-x: scroll;
         }
         @include breakpoint(xs){
-            overflow: hidden;
+            overflow-y: hidden;
+            overflow-x: scroll;
         }
         @include breakpoint(xxs){
-            overflow: hidden;
+            overflow-y: hidden;
+            overflow-x: scroll;
         }
 
         &__experience {
@@ -43,10 +73,36 @@
 
             &:first-child {
                 margin-left: 5rem;
+
+                @include breakpoint(md){
+                    margin-left: 0;
+                }
+                @include breakpoint(sm){
+                    margin-left: 0;
+                }
+                @include breakpoint(xs){
+                    margin-left: 0;
+                }
+                @include breakpoint(xxs){
+                    margin-left: 0;
+                }
+            }
+
+            @include breakpoint(md){
+                width: 280px;
+            }
+            @include breakpoint(sm){
+                width: 280px;
+            }
+            @include breakpoint(xs){
+                width: 280px;
+            }
+            @include breakpoint(xxs){
+                width: 280px;
             }
 
             &__subtitle {
-                font-size: 1vw;
+                font-size: 1rem;
                 margin-top: 8%;
                 margin-left: 8%;
             }
@@ -64,6 +120,27 @@
                 margin-left: 8%;
                 line-height: 120%;
                 margin-top: 5%;
+
+                @include breakpoint(lg){
+                    font-size: 1.5rem;
+                    width: 90%;
+                }
+                @include breakpoint(md){
+                    font-size: 1.5rem;
+                    width: 90%;
+                }
+                @include breakpoint(sm){
+                    font-size: 1.5rem;
+                    width: 90%;
+                }
+                @include breakpoint(xs){
+                    font-size: 1.5rem;
+                    width: 90%;
+                }
+                @include breakpoint(xxs){
+                    font-size: 1.4rem;
+                    width: 70%;
+                }
             }
 
             &__name {
@@ -82,9 +159,22 @@
         }
 
         &__stars{
+            width: 180px;
             margin-top: 5%;
             display: flex;
             gap: 1%;
+            @include breakpoint(md){
+                width: 150px;
+            }
+            @include breakpoint(sm){
+                width: 150px;
+            }
+            @include breakpoint(xs){
+                width: 150px;
+            }
+            @include breakpoint(xxs){
+                width: 130px;
+            }
         }
 
         &__reviewcount {
@@ -95,10 +185,24 @@
             padding-top: 2px;
             padding-right: 10px;
             border-right: 2px solid rgb(208, 208, 208);
+
+            @include breakpoint(xs){
+                font-size: 1rem;
+            }
+            @include breakpoint(xxs){
+                font-size: 1rem;
+            }
             &--aside{
                 display: inline-block;
                 margin-left: 5px;
                 font-size: 1.1rem;
+
+                @include breakpoint(xs){
+                    font-size: 1rem;
+                }
+                @include breakpoint(xxs){
+                    font-size: 1rem;
+                }
             }
         }
     }
