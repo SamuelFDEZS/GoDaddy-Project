@@ -6,15 +6,47 @@
     margin-top: 5%;
 
     &__title{
-        width: 32%;
+        width: 40%;
         font-size: 3.5rem;
         text-align: center;
         font-weight: bold;
+
+        @include breakpoint(lg){
+            width: 50%;
+        }
+        @include breakpoint(md){
+            width: 50%;
+            font-size: 3rem;
+        }
+        @include breakpoint(sm){
+            width: 60%;
+            font-size: 2.7rem;
+        }
+        @include breakpoint(xs){
+            width: 70%;
+            font-size: 2.5rem;
+        }
+        @include breakpoint(xxs){
+            width: 80%;
+            font-size: 2rem;
+        }
     }
 
     &__subtitle{
         margin-top: 1%;
         font-size: 2.2rem;
+
+        @include breakpoint(sm){
+            font-size: 2rem;
+        }
+        @include breakpoint(xs){
+            font-size: 1.7rem;
+            text-align: center;
+        }
+        @include breakpoint(xxs){
+            font-size: 1.5rem;
+            text-align: center;
+        }
     }
 
     &__list{
@@ -43,6 +75,22 @@
                 padding-top: 10px;
                 cursor: pointer;
 
+                @include breakpoint(md){
+                    font-size: 1.7rem;
+                }
+                @include breakpoint(sm){
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                @include breakpoint(xs){
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+                @include breakpoint(xxs){
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+
                 & span{
                     font-size: 1rem;
                     transition: all 0.3s;
@@ -64,6 +112,45 @@
                 padding-top: 20px;
                 font-size: 1.2rem;
                 line-height: 125%;
+
+                @include breakpoint(sm){
+                    font-size: 1.1rem;
+                    text-align: center;
+                    width: 100%;
+                }
+                @include breakpoint(xs){
+                    font-size: 1rem;
+                    width: 100%;
+                    text-align: center;
+                }
+                @include breakpoint(xxs){
+                    font-size: 0.9rem;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            &__enum{
+                @include breakpoint(sm){
+                    width: 100%;
+                }
+                @include breakpoint(xs){
+                    width: 100%;
+                }
+                @include breakpoint(xxs){
+                    width: 100%;
+                }
+                &__item{
+                    @include breakpoint(sm){
+                        text-align: center;
+                    }
+                    @include breakpoint(xs){
+                        text-align: center;
+                    }
+                    @include breakpoint(xxs){
+                        text-align: center;
+                    }
+                }
             }
         }
     }

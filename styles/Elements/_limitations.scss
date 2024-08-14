@@ -7,6 +7,19 @@
     margin-left: 3%;
     gap: 20%;
 
+    @include breakpoint(md){
+        width: 60%;
+    }
+    @include breakpoint(sm){
+        width: 60%;
+    }
+    @include breakpoint(xs){
+        width: 80%;
+    }
+    @include breakpoint(xxs){
+        width: 95%;
+    }
+
     &__link{
         display: block;
         color: black;

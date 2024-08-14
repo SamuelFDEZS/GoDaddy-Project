@@ -6,16 +6,41 @@
     align-items: center;
     background-color: #E0F7F7;
 
+    @include breakpoint(xs){
+        justify-content: center;
+    }
+    @include breakpoint(xxs){
+        justify-content: center;
+    }
+
     &__title{
         font-size: 2.7rem;
         font-weight: 700;
         margin-top: 6%;
+
+        @include breakpoint(xs){
+            font-size: 2.3rem;
+            text-align: center;
+        }
+        @include breakpoint(xxs){
+            font-size: 2.3rem;
+            text-align: center;
+        }
     }
 
     &__subtitle{
         font-size: 1.2rem;
         font-weight: 500;
         margin-top: 1.2%;
+
+        @include breakpoint(xs){
+            font-size: 1rem;
+            text-align: center;
+        }
+        @include breakpoint(xxs){
+            font-size: 1rem;
+            text-align: center;
+        }
     }
 
     &__search-container{
@@ -35,6 +60,20 @@
             border-bottom: 3px solid transparent;
             padding-left: 10px;
             margin: 0;
+
+            @include breakpoint(sm){
+                font-size: 1.1rem;
+            }
+            @include breakpoint(xs){
+                width: 50%;
+                font-size: 1rem;
+                height: 50%;
+            }
+            @include breakpoint(xxs){
+                width: 65%;
+                font-size: 1rem;
+                height: 50%;
+            }
 
             &:focus {
                 border-top: 3px solid #329ef7;
@@ -56,6 +95,46 @@
             margin: 0;
             border: 3px solid black;
             line-height: 0;
+
+            @include breakpoint(xl){
+                width: 6%;
+            }
+            @include breakpoint(lg){
+                width: 7%;
+            }
+            @include breakpoint(md){
+                width: 8%;
+            }
+            @include breakpoint(sm){
+                width: 45px;
+            }
+            @include breakpoint(xs){
+                width: 45px;
+                height: 50%;
+            }
+            @include breakpoint(xxs){
+                width: 40px;
+                height: 50%;
+            }
+
+            &::before{
+                content: "Search";
+                @include breakpoint(sm){
+                    content: "\f002";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                }
+                @include breakpoint(xs){
+                    content: "\f002";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                }
+                @include breakpoint(xxs){
+                    content: "\f002";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                }
+            }
         }
     }
 }

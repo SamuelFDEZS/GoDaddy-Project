@@ -25,21 +25,45 @@
                 margin-top: 20%;
                 font-size: 1.1rem;
                 font-weight: 700;
+
+                @include breakpoint(xxs) {
+                    font-size: 1rem;
+                }
             }
 
             &__title {
                 font-size: 3rem;
                 font-weight: bolder;
+
+                @include breakpoint(sm) {
+                    font-size: 2.5rem;
+                }
+                @include breakpoint(xs) {
+                    font-size: 2rem;
+                }
+                @include breakpoint(xxs) {
+                    font-size: 1.3rem;
+                }
             }
 
             &__description {
                 font-size: 1.3rem;
                 line-height: 130%;
                 width: 80%;
+
+                @include breakpoint(sm) {
+                    font-size: 1.1rem;
+                }
+                @include breakpoint(xs) {
+                    font-size: 1rem;
+                }
+                @include breakpoint(xxs) {
+                    font-size: 1rem;
+                }
             }
 
             &__button {
-                width: 20%;
+                width: 18vw;
                 height: 7%;
                 cursor: pointer;
                 transition: all 0.2s linear;
@@ -50,6 +74,24 @@
                 margin-top: 2%;
                 &:hover {
                     transform: scale(1.02);
+                }
+
+                @include breakpoint(md) {
+                    white-space: wrap;
+                }
+                @include breakpoint(sm) {
+                    width: 25vw;
+                }
+                @include breakpoint(xs) {
+                    white-space: wrap;
+                    font-size: 0.8rem;
+                    width: 25vw;
+
+                }
+                @include breakpoint(xxs) {
+                    white-space: wrap;
+                    font-size: 0.7rem;
+                    width: 25vw;
                 }
             }
         }
@@ -62,6 +104,18 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+
+                @include breakpoint(xs) {
+                    height: 70%;
+                }
+                @include breakpoint(xxs) {
+                    object-fit: fill;
+                }
+            }
+            @include breakpoint(xxs) {
+                height: 30%;
+                align-self: center;
+                margin-bottom: 80%;
             }
         }
 

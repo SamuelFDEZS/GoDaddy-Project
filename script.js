@@ -77,3 +77,63 @@ window.addEventListener('resize', () => {
     body.classList.remove('no-scroll');
     filter.classList.remove('filter--visible');
 });
+
+//Animations for the footer
+
+/**
+ * Animation for the plus icon to minus icon
+ */
+
+let isExpanded = false;
+let expandIcon = document.querySelectorAll('.footer__columns__column__expand');
+
+expandIcon.forEach(icon => {
+    icon.addEventListener('click', () => {
+        // Primero, restablecemos todos los botones y sus iconos a su estado por defecto
+        expandIcon.forEach(otherIcon => {
+            if (otherIcon !== icon) {
+                otherIcon.classList.add('icon-fade');
+
+                setTimeout(() => {
+                    otherIcon.classList.replace('fa-minus', 'fa-plus');
+                    otherIcon.classList.remove('icon-fade');
+                }, 100);
+
+                let otherItems = Array.from(otherIcon.parentNode.querySelectorAll('.footer__columns__column__item'));
+                otherItems.forEach(item => {
+                    item.classList.remove('footer__columns__column__item--visible');
+                });
+            }
+        });
+
+        // Ahora, alternamos el estado del botón actual
+        let iconParent = icon.parentNode;
+        let items = Array.from(iconParent.querySelectorAll('.footer__columns__column__item'));
+        isExpanded = icon.classList.contains('fa-minus');
+
+        // Cambiamos el icono del botón actual
+        icon.classList.add('icon-fade');
+        setTimeout(() => {
+            if (isExpanded) {
+                icon.classList.replace('fa-minus', 'fa-plus');
+            } else {
+                icon.classList.replace('fa-plus', 'fa-minus');
+            }
+            icon.classList.remove('icon-fade');
+        }, 100);
+
+        // Mostramos u ocultamos los items correspondientes
+        items.forEach(item => {
+            if (isExpanded) {
+                item.classList.remove('footer__columns__column__item--visible');
+            } else {
+                item.classList.add('footer__columns__column__item--visible');
+            }
+        });
+    });
+});
+
+
+/**
+ * Animation for footer element's items
+ */
