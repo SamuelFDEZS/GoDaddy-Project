@@ -1,55 +1,62 @@
-.freq-questions{
+.freq-questions {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
 
-    &__title{
+    &__title {
         width: 40%;
         font-size: 3.5rem;
         text-align: center;
-        font-weight: bold;
+        line-height: 1.2;
 
-        @include breakpoint(lg){
+        @include breakpoint(lg) {
             width: 50%;
         }
-        @include breakpoint(md){
+
+        @include breakpoint(md) {
             width: 50%;
             font-size: 3rem;
         }
-        @include breakpoint(sm){
+
+        @include breakpoint(sm) {
             width: 60%;
             font-size: 2.7rem;
         }
-        @include breakpoint(xs){
+
+        @include breakpoint(xs) {
             width: 70%;
             font-size: 2.5rem;
         }
-        @include breakpoint(xxs){
+
+        @include breakpoint(xxs) {
             width: 80%;
             font-size: 2rem;
         }
     }
 
-    &__subtitle{
-        margin-top: 1%;
+    &__subtitle {
+        margin-top: 8rem;
         font-size: 2.2rem;
+        font-weight: 600;
 
-        @include breakpoint(sm){
+        @include breakpoint(sm) {
             font-size: 2rem;
         }
-        @include breakpoint(xs){
+
+        @include breakpoint(xs) {
             font-size: 1.7rem;
             text-align: center;
         }
-        @include breakpoint(xxs){
+
+        @include breakpoint(xxs) {
             font-size: 1.5rem;
             text-align: center;
         }
     }
 
-    &__list{
+    &__list {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -57,48 +64,54 @@
         margin-top: 5%;
         gap: 2vh;
 
-        &__question{
+        &__question {
             width: 45%;
+            position: relative;
             padding: 20px 0;
             border-top: 1px solid black;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             position: relative;
-            & summary{
+            text-align: center;
+
+            & summary {
                 width: 90%;
                 height: 100%;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 font-size: 2rem;
                 gap: 5%;
-                padding-top: 10px;
                 cursor: pointer;
 
-                @include breakpoint(md){
+                @include breakpoint(md) {
                     font-size: 1.7rem;
                 }
-                @include breakpoint(sm){
+
+                @include breakpoint(sm) {
                     font-size: 1.5rem;
                     text-align: center;
                 }
-                @include breakpoint(xs){
+
+                @include breakpoint(xs) {
                     font-size: 1.3rem;
                     text-align: center;
                 }
-                @include breakpoint(xxs){
+
+                @include breakpoint(xxs) {
                     font-size: 1.2rem;
                     text-align: center;
                 }
 
-                & span{
+                & span {
                     font-size: 1rem;
                     transition: all 0.3s;
                     position: absolute;
                     right: 0;
                 }
 
-                & .fa-angle-down{
+                & .fa-angle-down {
                     transition: all 0.2s ease;
                 }
 
@@ -107,47 +120,59 @@
                 }
             }
 
-            &__description{
+            &__description {
                 width: 80%;
                 padding-top: 20px;
                 font-size: 1.2rem;
                 line-height: 125%;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
 
-                @include breakpoint(sm){
+
+                @include breakpoint(sm) {
                     font-size: 1.1rem;
                     text-align: center;
                     width: 100%;
                 }
-                @include breakpoint(xs){
+
+                @include breakpoint(xs) {
                     font-size: 1rem;
                     width: 100%;
                     text-align: center;
                 }
-                @include breakpoint(xxs){
+
+                @include breakpoint(xxs) {
                     font-size: 0.9rem;
                     width: 100%;
                     text-align: center;
                 }
             }
 
-            &__enum{
-                @include breakpoint(sm){
+            &__enum {
+                margin-top: 1rem;
+                @include breakpoint(sm) {
                     width: 100%;
                 }
-                @include breakpoint(xs){
+
+                @include breakpoint(xs) {
                     width: 100%;
                 }
-                @include breakpoint(xxs){
+
+                @include breakpoint(xxs) {
                     width: 100%;
                 }
-                &__item{
-                    @include breakpoint(sm){
+
+                &__item {
+                    @include breakpoint(sm) {
                         text-align: center;
                     }
-                    @include breakpoint(xs){
+
+                    @include breakpoint(xs) {
                         text-align: center;
                     }
-                    @include breakpoint(xxs){
+
+                    @include breakpoint(xxs) {
                         text-align: center;
                     }
                 }

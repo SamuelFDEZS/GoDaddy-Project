@@ -10,26 +10,29 @@
         margin-left: 5rem;
         margin-bottom: 1rem;
 
-        @include breakpoint(md){
+        @include breakpoint(md) {
             width: 60%;
             margin-left: 0;
             font-size: 2.5rem;
         }
-        @include breakpoint(sm){
+
+        @include breakpoint(sm) {
             width: 70%;
             font-size: 2.5rem;
             margin-left: 0;
             align-self: center;
             text-align: center;
         }
-        @include breakpoint(xs){
+
+        @include breakpoint(xs) {
             width: 70%;
             font-size: 2.5rem;
             margin-left: 0;
             align-self: center;
             text-align: center;
         }
-        @include breakpoint(xxs){
+
+        @include breakpoint(xxs) {
             width: 75%;
             font-size: 2.2rem;
             margin-left: 0;
@@ -43,23 +46,15 @@
         align-items: flex-start;
         flex-wrap: nowrap;
         gap: 1rem;
+        overflow-x: scroll;
 
-        @include breakpoint(md){
-            width: 100%;
-            overflow: hidden;
+        @include breakpoint(xl) {
+            overflow-x: visible;
         }
-        @include breakpoint(sm){
-            overflow-y: hidden;
-            overflow-x: scroll;
+        @include breakpoint(xxl) {
+            overflow-x: visible;
         }
-        @include breakpoint(xs){
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
-        @include breakpoint(xxs){
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
+
 
         &__experience {
             flex: 0 0 auto;
@@ -74,30 +69,36 @@
             &:first-child {
                 margin-left: 5rem;
 
-                @include breakpoint(md){
+                @include breakpoint(md) {
                     margin-left: 0;
                 }
-                @include breakpoint(sm){
+
+                @include breakpoint(sm) {
                     margin-left: 0;
                 }
-                @include breakpoint(xs){
+
+                @include breakpoint(xs) {
                     margin-left: 0;
                 }
-                @include breakpoint(xxs){
+
+                @include breakpoint(xxs) {
                     margin-left: 0;
                 }
             }
 
-            @include breakpoint(md){
+            @include breakpoint(md) {
                 width: 280px;
             }
-            @include breakpoint(sm){
+
+            @include breakpoint(sm) {
                 width: 280px;
             }
-            @include breakpoint(xs){
+
+            @include breakpoint(xs) {
                 width: 280px;
             }
-            @include breakpoint(xxs){
+
+            @include breakpoint(xxs) {
                 width: 280px;
             }
 
@@ -121,23 +122,27 @@
                 line-height: 120%;
                 margin-top: 5%;
 
-                @include breakpoint(lg){
+                @include breakpoint(lg) {
                     font-size: 1.5rem;
                     width: 90%;
                 }
-                @include breakpoint(md){
+
+                @include breakpoint(md) {
                     font-size: 1.5rem;
                     width: 90%;
                 }
-                @include breakpoint(sm){
+
+                @include breakpoint(sm) {
                     font-size: 1.5rem;
                     width: 90%;
                 }
-                @include breakpoint(xs){
+
+                @include breakpoint(xs) {
                     font-size: 1.5rem;
                     width: 90%;
                 }
-                @include breakpoint(xxs){
+
+                @include breakpoint(xxs) {
                     font-size: 1.4rem;
                     width: 70%;
                 }
@@ -153,26 +158,31 @@
         margin-left: 5%;
         margin-top: 3%;
         width: 40%;
-        &__link{
+
+        &__link {
             display: block;
             width: 30%;
         }
 
-        &__stars{
+        &__stars {
             width: 180px;
             margin-top: 5%;
             display: flex;
             gap: 1%;
-            @include breakpoint(md){
+
+            @include breakpoint(md) {
                 width: 150px;
             }
-            @include breakpoint(sm){
+
+            @include breakpoint(sm) {
                 width: 150px;
             }
-            @include breakpoint(xs){
+
+            @include breakpoint(xs) {
                 width: 150px;
             }
-            @include breakpoint(xxs){
+
+            @include breakpoint(xxs) {
                 width: 130px;
             }
         }
@@ -186,28 +196,31 @@
             padding-right: 10px;
             border-right: 2px solid rgb(208, 208, 208);
 
-            @include breakpoint(xs){
+            @include breakpoint(xs) {
                 font-size: 1rem;
             }
-            @include breakpoint(xxs){
+
+            @include breakpoint(xxs) {
                 font-size: 1rem;
             }
-            &--aside{
+
+            &--aside {
                 display: inline-block;
                 margin-left: 5px;
                 font-size: 1.1rem;
 
-                @include breakpoint(xs){
+                @include breakpoint(xs) {
                     font-size: 1rem;
                 }
-                @include breakpoint(xxs){
+
+                @include breakpoint(xxs) {
                     font-size: 1rem;
                 }
             }
         }
     }
 
-    &__buttons{
+    &__buttons {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -218,25 +231,28 @@
         bottom: 5%;
         gap: 10%;
 
-        @include breakpoint(md){
+        @include breakpoint(md) {
             display: none;
         }
-        @include breakpoint(sm){
+
+        @include breakpoint(sm) {
             display: none;
         }
-        @include breakpoint(xs){
+
+        @include breakpoint(xs) {
             display: none;
         }
-        @include breakpoint(xxs){
+
+        @include breakpoint(xxs) {
             display: none;
         }
 
         &__button {
             width: 36%;
-            height: 85%;
+            aspect-ratio: 1/1;
             outline: none;
             border: 2px solid black;
-            border-radius: 50px;
+            border-radius: 50%;
             background-color: transparent;
             cursor: pointer;
             transition: all 0.3s linear;
@@ -246,7 +262,7 @@
                 color: white;
             }
 
-            & span{
+            & span {
                 font-size: 1.3rem;
             }
         }

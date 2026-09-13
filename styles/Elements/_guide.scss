@@ -2,20 +2,20 @@
     width: 100%;
     height: 65vh;
     margin-top: 5%;
-    background-image: url('https://img1.wsimg.com/cdn/Image/All/All/1/All/5dbeea8f-a487-4950-81d0-c646dd3d3209/mrq-Guide-EMEA-Jamila-desktop.jpg');
+    background-image: url('/assets/images/jamila-desktop.webp');
     background-position: center;
     background-size: cover;
 
     @include breakpoint(sm) {
-        background-image: url('https://img1.wsimg.com/cdnassets/transform/7fe37a33-51b8-48bd-87a1-221c3be13c9f/mrq-Guide-EMEA-Jamila-mobile');
+        background-image: url('/assets/images/jamila-mobile.avif');
         height: 60vh;
     }
     @include breakpoint(xs) {
-        background-image: url('https://img1.wsimg.com/cdnassets/transform/7fe37a33-51b8-48bd-87a1-221c3be13c9f/mrq-Guide-EMEA-Jamila-mobile');
+        background-image: url('/assets/images/jamila-mobile.avif');
         height: 60vh;
     }
     @include breakpoint(xxs) {
-        background-image: url('https://img1.wsimg.com/cdnassets/transform/7fe37a33-51b8-48bd-87a1-221c3be13c9f/mrq-Guide-EMEA-Jamila-mobile');
+        background-image: url('/assets/images/jamila-mobile.avif');
         height: 60vh;
     }
 

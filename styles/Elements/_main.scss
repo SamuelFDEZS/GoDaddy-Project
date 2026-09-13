@@ -1,48 +1,53 @@
 .main {
     width: 100%;
-    height: 65vh;
+    min-height: 66vh;
     display: flex;
-    gap: 1%;
+    align-items: stretch;
+    gap: 1.2rem;
+    padding-inline-end: 5rem;
 
     @include breakpoint(md) {
-        height: 100vh;
         flex-direction: column;
         align-items: center;
+        padding-inline-end: 0;
+
     }
 
     @include breakpoint(sm) {
-        height: 100vh;
         flex-direction: column;
         align-items: center;
         gap: 2%;
+        padding-inline-end: 0;
+
     }
 
     @include breakpoint(xs) {
-        height: 100vh;
         flex-direction: column;
         align-items: center;
         gap: 2%;
+        padding-inline-end: 0;
+
     }
 
     @include breakpoint(xxs) {
-        height: 100vh;
         flex-direction: column;
         align-items: center;
         gap: 2%;
+        padding-inline-end: 0;
     }
 
     &__create {
-        width: 68%;
-        height: 100%;
+        flex: 2.8;
         border-radius: 10px;
         margin-left: 5%;
         display: flex;
         flex-direction: column;
-        background-image: url("https://img1.wsimg.com/cdnassets/transform/9fe7d867-9c96-44f4-9c62-48e594446440/row-mrq-hp-landscape");
+        background-image: url("/assets/images/landscape.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         gap: 4%;
+        padding-bottom: 2rem;
 
         @include breakpoint(md) {
             @include create-breakpoints {
@@ -130,6 +135,7 @@
                 text-align: center;
                 font-size: 2.5rem;
             }
+
             @include breakpoint(xxs) {
                 width: 100%;
                 text-align: center;
@@ -165,8 +171,10 @@
         }
 
         &__button {
-            width: 18%;
-            height: 10%;
+            width: 10rem;
+            padding: 1rem;
+            font-size: 1rem;
+            white-space: nowrap;
 
             @include breakpoint(md) {
                 width: 25%;
@@ -238,7 +246,6 @@
 
         &:hover {
             cursor: pointer;
-            padding: 0 30px;
             transform: scale(1.02);
 
             &>.main__create__button__arrow,
@@ -260,8 +267,7 @@
     }
 
     &__offer {
-        width: 22%;
-        height: 100%;
+        flex: 1;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -286,6 +292,7 @@
             gap: 8%;
             border-radius: 25px;
         }
+
         @include breakpoint(xs) {
             width: 97%;
             height: 15%;
@@ -294,6 +301,7 @@
             gap: 3%;
             border-radius: 25px;
         }
+
         @include breakpoint(xxs) {
             width: 97%;
             height: 15%;
@@ -317,11 +325,13 @@
                 margin-top: 3%;
                 font-size: 1rem;
             }
+
             @include breakpoint(xs) {
                 margin-left: 2%;
                 margin-top: 3%;
                 font-size: 1rem;
             }
+
             @include breakpoint(xxs) {
                 margin-left: 2%;
                 margin-top: 3%;
@@ -348,11 +358,13 @@
                 font-size: 1.4rem;
                 white-space: nowrap;
             }
+
             @include breakpoint(xs) {
                 text-align: left;
                 margin-left: 2%;
                 font-size: 1.4rem;
             }
+
             @include breakpoint(xxs) {
                 text-align: left;
                 margin-left: 2%;
@@ -361,8 +373,8 @@
         }
 
         &__button {
-            width: 60%;
-            height: 10%;
+            width: 12rem;
+            padding: 1rem 0;
             border: 3px solid white;
 
             @include breakpoint(md) {
@@ -378,6 +390,7 @@
             @include breakpoint(xs) {
                 display: none;
             }
+
             @include breakpoint(xxs) {
                 display: none;
             }
@@ -395,9 +408,11 @@
             @include breakpoint(sm) {
                 display: none;
             }
+
             @include breakpoint(xs) {
                 display: none;
             }
+
             @include breakpoint(xxs) {
                 display: none;
             }
@@ -418,12 +433,14 @@
                 margin-left: 2%;
                 display: block;
             }
+
             @include breakpoint(xs) {
                 text-align: left;
                 margin-left: 2%;
                 display: block;
                 font-size: 0.8rem;
             }
+
             @include breakpoint(xxs) {
                 text-align: left;
                 margin-left: 2%;
@@ -434,36 +451,24 @@
 
         &__arrow.fa-solid {
             display: none;
+            width: 5%;
+            position: absolute;
+            right: 2%;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-size: 1.7rem;
+            cursor: pointer;
 
             @include breakpoint(sm) {
                 display: block;
-                width: 5%;
-                position: absolute;
-                right: 2%;
-                top: 50%;
-                transform: translate(-50% 0);
-                font-size: 1.7rem;
-                cursor: pointer;
             }
+
             @include breakpoint(xs) {
                 display: block;
-                width: 5%;
-                position: absolute;
-                right: 2%;
-                top: 50%;
-                transform: translate(-50% 0);
-                font-size: 1.7rem;
-                cursor: pointer;
             }
+
             @include breakpoint(xxs) {
                 display: block;
-                width: 5%;
-                position: absolute;
-                right: 2%;
-                top: 50%;
-                transform: translate(-50% 0);
-                font-size: 1.7rem;
-                cursor: pointer;
             }
         }
     }

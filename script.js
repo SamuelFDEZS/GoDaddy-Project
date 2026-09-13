@@ -89,7 +89,7 @@ let expandIcon = document.querySelectorAll('.footer__columns__column__expand');
 
 expandIcon.forEach(icon => {
     icon.addEventListener('click', () => {
-        // Primero, restablecemos todos los botones y sus iconos a su estado por defecto
+
         expandIcon.forEach(otherIcon => {
             if (otherIcon !== icon) {
                 otherIcon.classList.add('icon-fade');
@@ -106,12 +106,10 @@ expandIcon.forEach(icon => {
             }
         });
 
-        // Ahora, alternamos el estado del botón actual
         let iconParent = icon.parentNode;
         let items = Array.from(iconParent.querySelectorAll('.footer__columns__column__item'));
         isExpanded = icon.classList.contains('fa-minus');
 
-        // Cambiamos el icono del botón actual
         icon.classList.add('icon-fade');
         setTimeout(() => {
             if (isExpanded) {
@@ -122,7 +120,6 @@ expandIcon.forEach(icon => {
             icon.classList.remove('icon-fade');
         }, 100);
 
-        // Mostramos u ocultamos los items correspondientes
         items.forEach(item => {
             if (isExpanded) {
                 item.classList.remove('footer__columns__column__item--visible');
@@ -132,8 +129,3 @@ expandIcon.forEach(icon => {
         });
     });
 });
-
-
-/**
- * Animation for footer element's items
- */

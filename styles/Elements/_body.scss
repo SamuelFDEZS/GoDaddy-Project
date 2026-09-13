@@ -1,11 +1,12 @@
-::selection{
+::selection {
     background-color: #96fffa;
 }
 
-body{
+body {
     overflow-x: hidden;
+    font-family: gdSherpa;
 
-    &.no-scroll{
+    &.no-scroll {
         overflow: hidden;
     }
 }
