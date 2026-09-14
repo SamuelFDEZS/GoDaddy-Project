@@ -1670,6 +1670,7 @@ button.main__button > .main__create__button__arrow,
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  padding-block-end: 2rem;
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--domains__search {
@@ -1705,9 +1706,9 @@ button.main__button > .main__create__button__arrow,
   width: 75%;
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  gap: 1rem;
   justify-content: flex-start;
-  margin-left: 4%;
+  margin-left: 2rem;
   padding-bottom: 1rem;
 }
 @media ((min-width: 1200px) and (max-width: 1399.98px)) {
@@ -1717,24 +1718,26 @@ button.main__button > .main__create__button__arrow,
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--domains__search__content {
-    margin-top: 10%;
+    align-self: flex-end;
+    padding-bottom: 0;
   }
 }
 @media ((min-width: 768px) and (max-width: 991.98px)) {
   .business__container--domains__search__content {
-    margin-top: 10%;
+    align-self: flex-end;
+    padding-bottom: 0;
   }
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .business__container--domains__search__content {
-    width: 90%;
-    margin-bottom: 5%;
+    align-self: flex-end;
+    padding-bottom: 0;
   }
 }
 @media ((min-width: 401px) and (max-width: 575.98px)) {
   .business__container--domains__search__content {
-    margin-bottom: 10%;
-    width: 90%;
+    align-self: flex-end;
+    padding-bottom: 0;
   }
 }
 .business__container--domains__search__content__title {
@@ -1767,17 +1770,16 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--domains__search__content__button {
-  width: 42%;
-  height: 27%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.5rem 0;
+  font-size: 1rem;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 2%;
+  border-radius: 0.8rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -1815,6 +1817,7 @@ button.main__button > .main__create__button__arrow,
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  padding-block-end: 2rem;
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--domains__find {
@@ -1858,12 +1861,11 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--domains__find__content {
   width: 55%;
-  height: 55%;
-  margin-left: 3%;
+  margin-left: 2rem;
   margin-bottom: 2%;
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  gap: 1rem;
 }
 @media ((min-width: 1200px) and (max-width: 1399.98px)) {
   .business__container--domains__find__content {
@@ -1872,24 +1874,22 @@ button.main__button > .main__create__button__arrow,
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--domains__find__content {
-    margin-top: 10%;
+    align-self: flex-end;
   }
 }
 @media ((min-width: 768px) and (max-width: 991.98px)) {
   .business__container--domains__find__content {
-    margin-top: 10%;
+    align-self: flex-end;
   }
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .business__container--domains__find__content {
-    margin-top: 10%;
+    align-self: flex-end;
   }
 }
 @media ((min-width: 401px) and (max-width: 575.98px)) {
   .business__container--domains__find__content {
-    margin-top: 10%;
-    text-align: center;
-    width: 80%;
+    align-self: flex-end;
   }
 }
 .business__container--domains__find__content__title {
@@ -1911,16 +1911,15 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--domains__find__content__button {
-  width: 63%;
-  height: 28%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.5rem 0;
+  font-size: 1rem;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 3px;
+  border-radius: 0.8rem;
   margin-top: 5%;
   cursor: pointer;
   transition: 0.3s;
@@ -1959,6 +1958,7 @@ button.main__button > .main__create__button__arrow,
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  padding-block-end: 2rem;
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--domains__start {
@@ -2002,33 +2002,31 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--domains__start__content {
   width: 55%;
-  height: 55%;
-  margin-left: 3%;
+  margin-left: 2rem;
   margin-bottom: 2%;
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  gap: 1rem;
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--domains__start__content {
-    margin-top: 10%;
+    align-self: flex-end;
   }
 }
 @media ((min-width: 768px) and (max-width: 991.98px)) {
   .business__container--domains__start__content {
-    margin-top: 10%;
+    align-self: flex-end;
   }
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .business__container--domains__start__content {
-    margin-top: 10%;
+    align-self: flex-end;
   }
 }
 @media ((min-width: 401px) and (max-width: 575.98px)) {
   .business__container--domains__start__content {
-    margin-top: 10%;
+    align-self: flex-end;
     text-align: center;
-    width: 80%;
   }
 }
 .business__container--domains__start__content__title {
@@ -2050,17 +2048,16 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--domains__start__content__button {
-  width: 44%;
-  height: 28%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.5rem 0;
+  font-size: 1rem;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 3px;
-  margin-top: 5%;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -2099,6 +2096,7 @@ button.main__button > .main__create__button__arrow,
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  padding-block-end: 3rem;
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--recommended__start {
@@ -2132,13 +2130,12 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--recommended__start__content {
   width: 70%;
-  height: 30%;
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  gap: 1rem;
   justify-content: flex-start;
-  margin-left: 4%;
-  margin-bottom: 3%;
+  margin-left: 2rem;
+  align-self: flex-end;
 }
 @media ((min-width: 1200px) and (max-width: 1399.98px)) {
   .business__container--recommended__start__content {
@@ -2206,16 +2203,15 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--recommended__start__content__button {
-  width: 30%;
-  height: 35%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.7rem 0;
+  font-size: 1rem;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 0.8rem;
   margin-top: 1%;
   cursor: pointer;
   transition: 0.3s;
@@ -2254,6 +2250,7 @@ button.main__button > .main__create__button__arrow,
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  padding-block-end: 2rem;
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--recommended__create {
@@ -2297,12 +2294,11 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--recommended__create__content {
   width: 50%;
-  height: 55%;
-  margin-left: 3%;
-  margin-bottom: 2%;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  gap: 1rem;
+  align-self: flex-end;
 }
 @media ((min-width: 1200px) and (max-width: 1399.98px)) {
   .business__container--recommended__create__content {
@@ -2350,37 +2346,24 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--recommended__create__content__button {
-  width: 50%;
-  height: 30%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.7rem 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 5%;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 .business__container--recommended__create__content__button:hover {
   scale: 1.02;
-}
-@media ((min-width: 1200px) and (max-width: 1399.98px)) {
-  .business__container--recommended__create__content__button {
-    width: 70%;
-  }
-}
-@media ((min-width: 992px) and (max-width: 1199.98px)) {
-  .business__container--recommended__create__content__button {
-    width: 75%;
-  }
-}
-@media ((min-width: 768px) and (max-width: 991.98px)) {
-  .business__container--recommended__create__content__button {
-    width: 90%;
-  }
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .business__container--recommended__create__content__button {
@@ -2403,6 +2386,7 @@ button.main__button > .main__create__button__arrow,
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  padding-block-end: 3rem;
 }
 @media ((min-width: 992px) and (max-width: 1199.98px)) {
   .business__container--recommended__view {
@@ -2446,34 +2430,11 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--recommended__view__content {
   width: 50%;
-  height: 55%;
-  margin-left: 3%;
-  margin-bottom: 2%;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3%;
-}
-@media ((min-width: 992px) and (max-width: 1199.98px)) {
-  .business__container--recommended__view__content {
-    margin-top: 10%;
-  }
-}
-@media ((min-width: 768px) and (max-width: 991.98px)) {
-  .business__container--recommended__view__content {
-    margin-top: 10%;
-  }
-}
-@media ((min-width: 576px) and (max-width: 767.98px)) {
-  .business__container--recommended__view__content {
-    margin-top: 10%;
-  }
-}
-@media ((min-width: 401px) and (max-width: 575.98px)) {
-  .business__container--recommended__view__content {
-    margin-top: 10%;
-    text-align: center;
-    width: 80%;
-  }
+  gap: 1rem;
+  align-self: flex-end;
 }
 .business__container--recommended__view__content__title {
   font-size: 1.5rem;
@@ -2494,39 +2455,29 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--recommended__view__content__button {
-  width: 65%;
-  height: 33%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.7rem 0.8rem;
+  font-size: 1rem;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 5%;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 .business__container--recommended__view__content__button:hover {
   scale: 1.02;
 }
-@media ((min-width: 1200px) and (max-width: 1399.98px)) {
-  .business__container--recommended__view__content__button {
-    width: 78%;
-  }
-}
-@media ((min-width: 992px) and (max-width: 1199.98px)) {
-  .business__container--recommended__view__content__button {
-    width: 95%;
-  }
-}
 @media ((min-width: 768px) and (max-width: 991.98px)) {
   .business__container--recommended__view__content__button {
-    width: 100%;
     white-space: wrap;
     display: flex;
     align-items: center;
+    line-height: 1.3;
+    max-width: 20rem;
   }
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
@@ -2573,6 +2524,7 @@ button.main__button > .main__create__button__arrow,
   background-image: url("/assets/images/wordpress.webp");
   background-position: center;
   background-size: cover;
+  padding-block-end: 2rem;
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .business__container--wordpress__explore {
@@ -2591,45 +2543,11 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--wordpress__explore__content {
   width: 70%;
-  height: 30%;
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  gap: 1rem;
   justify-content: flex-start;
-  margin-left: 4%;
-}
-@media ((min-width: 1200px) and (max-width: 1399.98px)) {
-  .business__container--wordpress__explore__content {
-    margin-bottom: 10%;
-  }
-}
-@media ((min-width: 992px) and (max-width: 1199.98px)) {
-  .business__container--wordpress__explore__content {
-    margin-bottom: 10%;
-  }
-}
-@media ((min-width: 768px) and (max-width: 991.98px)) {
-  .business__container--wordpress__explore__content {
-    margin-bottom: 10%;
-    width: 85%;
-  }
-}
-@media ((min-width: 576px) and (max-width: 767.98px)) {
-  .business__container--wordpress__explore__content {
-    margin-bottom: 10%;
-    width: 85%;
-  }
-}
-@media ((min-width: 401px) and (max-width: 575.98px)) {
-  .business__container--wordpress__explore__content {
-    margin-bottom: 10%;
-    width: 85%;
-  }
-}
-@media (max-width: 400.98px) {
-  .business__container--wordpress__explore__content {
-    width: 85%;
-  }
+  margin-left: 2rem;
 }
 .business__container--wordpress__explore__content__title {
   font-size: 2rem;
@@ -2672,17 +2590,16 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--wordpress__explore__content__button {
-  width: 55%;
-  height: 30%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.7rem 0.8rem;
+  font-size: 1rem;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 2%;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -2727,6 +2644,7 @@ button.main__button > .main__create__button__arrow,
   background-image: url("/assets/images/ssl-security.webp");
   background-position: center;
   background-size: cover;
+  padding-block-end: 2rem;
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .business__container--wordpress__protect {
@@ -2745,45 +2663,11 @@ button.main__button > .main__create__button__arrow,
 }
 .business__container--wordpress__protect__content {
   width: 70%;
-  height: 30%;
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  gap: 1rem;
   justify-content: flex-start;
-  margin-left: 4%;
-}
-@media ((min-width: 1200px) and (max-width: 1399.98px)) {
-  .business__container--wordpress__protect__content {
-    margin-bottom: 10%;
-  }
-}
-@media ((min-width: 992px) and (max-width: 1199.98px)) {
-  .business__container--wordpress__protect__content {
-    margin-bottom: 10%;
-  }
-}
-@media ((min-width: 768px) and (max-width: 991.98px)) {
-  .business__container--wordpress__protect__content {
-    margin-bottom: 10%;
-    width: 85%;
-  }
-}
-@media ((min-width: 576px) and (max-width: 767.98px)) {
-  .business__container--wordpress__protect__content {
-    margin-bottom: 10%;
-    width: 85%;
-  }
-}
-@media ((min-width: 401px) and (max-width: 575.98px)) {
-  .business__container--wordpress__protect__content {
-    margin-bottom: 10%;
-    width: 85%;
-  }
-}
-@media (max-width: 400.98px) {
-  .business__container--wordpress__protect__content {
-    width: 85%;
-  }
+  margin-left: 2rem;
 }
 .business__container--wordpress__protect__content__title {
   font-size: 2rem;
@@ -2826,37 +2710,21 @@ button.main__button > .main__create__button__arrow,
   }
 }
 .business__container--wordpress__protect__content__button {
-  width: 34%;
-  height: 28%;
-  font-size: 0.9rem;
+  max-width: 15rem;
+  padding: 1.7rem 0.8rem;
+  font-size: 1rem;
   white-space: nowrap;
   color: white;
   background-color: black;
   outline: none;
   border: 0;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 2%;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 .business__container--wordpress__protect__content__button:hover {
   scale: 1.02;
-}
-@media ((min-width: 1200px) and (max-width: 1399.98px)) {
-  .business__container--wordpress__protect__content__button {
-    width: 62%;
-  }
-}
-@media ((min-width: 992px) and (max-width: 1199.98px)) {
-  .business__container--wordpress__protect__content__button {
-    width: 70%;
-  }
-}
-@media ((min-width: 768px) and (max-width: 991.98px)) {
-  .business__container--wordpress__protect__content__button {
-    width: 85%;
-  }
 }
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .business__container--wordpress__protect__content__button {
